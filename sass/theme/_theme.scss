@@ -1,0 +1,56 @@
+// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+
+
+.navbar-brand {
+	color: #44a7b1;
+	font-size: 2rem;
+	font-weight: 100;
+	line-height: 2.2rem;
+	padding: 3rem 0 1rem 0;
+	.yeah {
+		font-size: 8rem;
+	}
+	&:visited,
+	&:hover,
+	&:active, 
+	&:focus {
+		color: #44a7b1;
+	}
+}
+
+
+.triangle-top-left {
+	z-index: 100000;
+	background: #ccc;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url('../images/triangle-top-left.svg') 0 0 no-repeat;
+	background-size: contain;
+	height: 10vw;
+	width: 10vw;
+
+	@include media-breakpoint-down(sm) {
+		height: 20vw;
+		width: 20vw;	
+	}
+
+}
+
+.triangle-top-right {
+	z-index: 100000;
+	background: #ccc;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: url('../images/triangle-top-right.svg') 0 0 no-repeat;
+	background-size: contain;
+	height: 20vw;
+	width: 20vw;
+
+	@include media-breakpoint-down(sm) {
+		height: 40vw;
+		width: 40vw;	
+	}
+
+}
