@@ -22,7 +22,7 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 		if ( is_active_sidebar( 'right-sidebar' ) || is_active_sidebar( 'left-sidebar' ) ) {
 			$html .= 'col-md-8 content-area" id="primary">';
 		} else {
-			$html .= 'col-md-12 content-area" id="primary">';
+			$html .= 'col-md-12 col-lg-10 offset-lg-1 content-area bg-white border-round-top border-round-bottom" id="primary">';
 		}
 		echo $html; // WPCS: XSS OK.
 	} elseif ( is_active_sidebar( 'right-sidebar' ) && is_active_sidebar( 'left-sidebar' ) ) {

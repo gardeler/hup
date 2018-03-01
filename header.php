@@ -27,8 +27,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <div class="hfeed site" id="page">
 
-<div class="triangle-top-left"></div>
-<div class="triangle-top-right"></div>
+<!--<div class="triangle-top-left"></div>-->
+<!--<div class="triangle-top-right"></div>-->
 
 	<!-- ******************* The Navbar Area ******************* -->
 	<div class="wrapper-fluid wrapper-navbar" id="wrapper-navbar">
@@ -37,7 +37,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		'understrap' ); ?></a>
 
 		
-		<div class="container text-center">
+		<div class="container text-center bg-white">
 			<?php if ( is_front_page() && is_home() ) : ?>
 
 				<h1 class="navbar-brand mb-0"><a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="Yeah, wir heiraten!"><span class="yeah">Yeah,</span><br /> <em>wir heiraten!</em></a></h1>
@@ -50,24 +50,20 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</div>
 		
 		
-		<nav class="navbar navbar-expand-md navbar-light bg-light">
+		<nav class="main-nav">
 
 		<?php if ( 'container' == $container ) : ?>
-			<div class="container">
+			<div class="container bg-white border-round-bottom">
 		<?php endif; ?>
 
-					
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
 
 				<!-- The WordPress Menu goes here -->
 				<?php wp_nav_menu(
 					array(
 						'theme_location'  => 'primary',
-						'container_class' => 'collapse navbar-collapse justify-content-center',
-						'container_id'    => 'navbarNavDropdown',
-						'menu_class'      => 'navbar-nav',
+						'container_class' => ' text-center',
+
+						'menu_class'      => 'nav justify-content-center',
 						'fallback_cb'     => '',
 						'menu_id'         => 'main-menu',
 						'walker'          => new understrap_WP_Bootstrap_Navwalker(),

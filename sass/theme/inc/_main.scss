@@ -1,0 +1,36 @@
+
+body {
+  font-family: 'Gill Sans', Calibri, sans-serif;
+  font-weight: 100;
+  font-size: 18px;
+}
+
+.navbar-brand {
+  color: #44a7b1;
+  font-size: 2rem;
+  font-weight: 100;
+  line-height: 2.2rem;
+  padding: 3rem 0 1rem 0;
+  .yeah {
+    font-size: 8rem;
+  }
+  &:visited,
+  &:hover,
+  &:active,
+  &:focus {
+    color: $color-turquoise;
+  }
+}
+
+a {
+  font-weight: 500;
+  color: $color-turquoise;
+  transition: color .4s;
+  &:visited,
+  &:hover,
+  &:active,
+  &:focus {
+    color: $color-turquoise-dark;
+    text-decoration: none;
+  }
+}

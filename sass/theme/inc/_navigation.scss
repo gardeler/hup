@@ -1,0 +1,21 @@
+
+
+.main-nav {
+  background: transparent !important;
+}
+
+.nav-link {
+  padding: .5rem .5rem;
+  font-weight: 100;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: $color-turquoise;
+  &:visited,
+  &:hover,
+  &:active,
+  &:focus {
+    color: $color-turquoise-dark;
+  }
+}
+

@@ -1,0 +1,56 @@
+
+.triangle-top-left {
+  z-index: 100000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url('../images/triangle-top-left.svg') 0 0 no-repeat;
+  background-size: contain;
+  height: 10vw;
+  width: 10vw;
+
+  @include media-breakpoint-down(sm) {
+    height: 20vw;
+    width: 20vw;
+  }
+
+}
+
+.triangle-top-right {
+  z-index: 100000;
+  background: #ccc;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url('../images/triangle-top-right.svg') 0 0 no-repeat;
+  background-size: contain;
+  height: 20vw;
+  width: 20vw;
+
+  @include media-breakpoint-down(sm) {
+    height: 40vw;
+    width: 40vw;
+  }
+
+}
+
+
+
+#page {
+  background: url('../images/tiles.svg') 0 0;
+  background-size: 500px;
+}
+
+.border-round-bottom {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.border-round-top {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.content-area {
+  padding: 50px;
+}

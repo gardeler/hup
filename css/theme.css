@@ -9478,6 +9478,11 @@ a.skip-link {
 .gallery-caption {
   display: block; }
 
+body {
+  font-family: 'Gill Sans', Calibri, sans-serif;
+  font-weight: 100;
+  font-size: 18px; }
+
 .navbar-brand {
   color: #44a7b1;
   font-size: 2rem;
@@ -9489,9 +9494,16 @@ a.skip-link {
   .navbar-brand:visited, .navbar-brand:hover, .navbar-brand:active, .navbar-brand:focus {
     color: #44a7b1; }
 
+a {
+  font-weight: 500;
+  color: #44a7b1;
+  transition: color .4s; }
+  a:visited, a:hover, a:active, a:focus {
+    color: #41858f;
+    text-decoration: none; }
+
 .triangle-top-left {
   z-index: 100000;
-  background: #ccc;
   position: absolute;
   top: 0;
   left: 0;
@@ -9519,6 +9531,33 @@ a.skip-link {
       height: 40vw;
       width: 40vw; } }
 
+#page {
+  background: url("../images/tiles.svg") 0 0;
+  background-size: 500px; }
+
+.border-round-bottom {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px; }
+
+.border-round-top {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px; }
+
+.content-area {
+  padding: 50px; }
+
+.main-nav {
+  background: transparent !important; }
+
+.nav-link {
+  padding: .5rem .5rem;
+  font-weight: 100; }
+
+.navbar-light .navbar-nav .nav-link {
+  color: #44a7b1; }
+  .navbar-light .navbar-nav .nav-link:visited, .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:active, .navbar-light .navbar-nav .nav-link:focus {
+    color: #41858f; }
+
 /*
 * Use existing Bootstrap 4 classes and
 * variables to extend - override CF7 style
@@ -9542,6 +9581,3 @@ a.skip-link {
   .wpcf7 .wpcf7-validation-errors {
     color: #dc3545;
     border: 1px solid #e9ecef; }
-
-body {
-  font-family: "Gill Sans"; }
