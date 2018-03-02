@@ -9532,6 +9532,7 @@ a {
       width: 40vw; } }
 
 #page {
+  background: #ccc;
   background: url("../images/tiles.svg") 0 0;
   background-size: 500px; }
 
@@ -9557,6 +9558,11 @@ a {
   color: #44a7b1; }
   .navbar-light .navbar-nav .nav-link:visited, .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:active, .navbar-light .navbar-nav .nav-link:focus {
     color: #41858f; }
+
+#wrapper-footer {
+  padding: 0; }
+  #wrapper-footer .site-footer {
+    min-height: 200px; }
 
 /*
 * Use existing Bootstrap 4 classes and

@@ -37,23 +37,29 @@ $container = get_theme_mod( 'understrap_container_type' );
 		'understrap' ); ?></a>
 
 		
-		<div class="container text-center bg-white">
-			<?php if ( is_front_page() && is_home() ) : ?>
+		<div class="container text-center">
+      <div class="row">
+        <div class="col-md-12 col-lg-10 offset-lg-1 bg-white">
+        <?php if ( is_front_page() && is_home() ) : ?>
 
-				<h1 class="navbar-brand mb-0"><a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="Yeah, wir heiraten!"><span class="yeah">Yeah,</span><br /> <em>wir heiraten!</em></a></h1>
-				
-			<?php else : ?>
+          <h1 class="navbar-brand mb-0"><a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="Yeah, wir heiraten!"><span class="yeah">Yeah,</span><br /> <em>wir heiraten!</em></a></h1>
 
-				<a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="Yeah, wir heiraten!"><span class="yeah">Yeah,</span><br /> <em>wir heiraten!</em></a></a>
-			
-			<?php endif; ?>
+        <?php else : ?>
+
+          <a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="Yeah, wir heiraten!"><span class="yeah">Yeah,</span><br /> <em>wir heiraten!</em></a></a>
+
+        <?php endif; ?>
+        </div>
+      </div>
 		</div>
 		
 		
 		<nav class="main-nav">
 
 		<?php if ( 'container' == $container ) : ?>
-			<div class="container bg-white border-round-bottom">
+			<div class="container ">
+        <div class="row">
+          <div class="col-md-12 col-lg-10 offset-lg-1 bg-white border-round-bottom">
 		<?php endif; ?>
 
 
@@ -70,6 +76,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 					)
 				); ?>
 			<?php if ( 'container' == $container ) : ?>
+          </div><!-- .col-md-12 ... -->
+        </div><!-- .row -->
 			</div><!-- .container -->
 			<?php endif; ?>
 
