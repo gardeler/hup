@@ -9,6 +9,12 @@
   font-weight: 100;
 }
 
+@media (max-width: 440px) {
+  .nav-link {
+    font-size: 13px;
+  }
+}
+
 .navbar-light .navbar-nav .nav-link {
   color: $color-turquoise;
   &:visited,

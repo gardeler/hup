@@ -19,12 +19,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<div class="row">
 
-			<div class="col-md-12 col-lg-10 offset-lg-1 bg-white border-round-top">
+			<div class="col-md-12 col-lg-10 offset-lg-1">
 
         <div class="row">
 
 				<footer class="site-footer" id="colophon">
 
+          <div class="hup-logo"></div>
 
 				</footer><!-- #colophon -->
 
@@ -39,6 +40,31 @@ $container = get_theme_mod( 'understrap_container_type' );
 </div><!-- #page we need this extra closing tag here -->
 
 <?php wp_footer(); ?>
+
+
+<script>
+
+
+
+  jQuery( document ).ready(function($) {
+
+    handleResize = function() {
+      if($('#page').height() <= window.innerHeight) {
+
+        var contentAreaOuterPaddings = 30 + 30;
+        var contentAreaInnerPaddings = 50 + 50;
+
+        $('.content-area').height(window.innerHeight - $('#wrapper-navbar').height() - $('#wrapper-footer').height() - contentAreaOuterPaddings - contentAreaInnerPaddings);
+      }
+    };
+
+    handleResize();
+
+    $( window ).resize(handleResize);
+
+
+  });
+</script>
 
 </body>
 

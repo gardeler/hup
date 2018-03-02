@@ -1,0 +1,33 @@
+
+.wpcf7 {
+  margin: 0;
+  max-width: none;
+}
+
+.wpcf7 input[name="your-name"],
+.wpcf7 input[name="your-email"]{
+  width: 50%;
+}
+
+@media (max-width: 992px) {
+  .wpcf7 input[name="your-name"],
+  .wpcf7 input[name="your-email"]{
+    width: 100%;
+  }
+}
+
+.wpcf7 input[name="your-message"] {
+  width: 100%;
+}
+
+.wpcf7 input[type="submit"] {
+  width: 100px;
+  color: #44a7b1;
+  border-color: #44a7b1;
+}
+
+.wpcf7 input[type="submit"]:hover {
+  color: #fff;
+  background-color: #44a7b1;
+  border-color: #44a7b1;
+}

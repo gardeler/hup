@@ -27,6 +27,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <div class="hfeed site" id="page">
 
+  <div class="triangle-tiles"></div>
+
 <!--<div class="triangle-top-left"></div>-->
 <!--<div class="triangle-top-right"></div>-->
 
